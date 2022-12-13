@@ -1,0 +1,24 @@
+.header-container {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.25);
+  height: 10vh;
+  width: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.logo {
+  width: 75px;
+  height: 100%;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.navigation-menu-list {
+  margin-right: 200px;
+}

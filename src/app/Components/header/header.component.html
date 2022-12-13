@@ -1,0 +1,26 @@
+<div
+  class="header-container"
+  fxLayout="row"
+  fxLayoutAlign="space-around center"
+>
+  <div
+    class="logo"
+  >
+    <img src="../../../assets/images/png/charizard.png" alt="logo">
+  </div>
+  <span class="spacer"></span>
+  <div
+    class="navigation-menu-list"
+    fxLayout="row"
+    fxLayoutGap="10px"
+    fxLayoutAlign="space-around center"
+  >
+    <app-nav-menu-btn
+      *ngFor="let eachMenu of navMenu; let i = index;"
+      (click)="selectedBtn(i)"
+      [menu]="eachMenu"
+      [currentIndex]="i"
+      [selectedIndex]="selectedIndex"
+    ></app-nav-menu-btn>
+  </div>
+</div>

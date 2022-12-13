@@ -1,0 +1,107 @@
+<div
+  class="contact-us-container"
+  fxLayout="row"
+>
+  <div
+    class="left"
+    fxFlex="50"
+    fxLayout="column"
+    fxLayoutAlign="center start"
+  >
+    <div
+      class="box"
+      fxLayout="column"
+      fxLayoutGap="80px"
+    >
+      <div class="heading">
+        CONTACT
+      </div>
+      <div
+        class="row"
+        fxLayout="row"
+        fxLayoutAlign="Space-around start"
+        fxLayoutGap="20"
+      >
+        <mat-icon
+          class="icon"
+          [svgIcon]="'phone'"
+        ></mat-icon>
+        <div
+          class="content"
+          fxLayout="column"
+          fxLayoutGap="15"
+        >
+          <div class="label">
+            Phone :
+          </div>
+          <div class="value">
+            +91 976 286 4712
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+        fxLayout="row"
+        fxLayoutAlign="Space-around start"
+        fxLayoutGap="20"
+      >
+        <mat-icon
+          class="icon"
+          [svgIcon]="'mail'"
+        ></mat-icon>
+        <div
+          class="content"
+          fxLayout="column"
+          fxLayoutGap="15"
+        >
+          <div class="label">
+            E-Mail :
+          </div>
+          <div class="value">
+            abhijit@gmail.com
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+        fxLayout="row"
+        fxLayoutAlign="Space-around start"
+        fxLayoutGap="20"
+      >
+        <mat-icon
+          class="icon"
+          [svgIcon]="'location-dot'"
+        ></mat-icon>
+        <div
+          class="content"
+          fxLayout="column"
+          fxLayoutGap="15"
+        >
+          <div class="label">
+            Address :
+          </div>
+          <div class="value">
+            NDA Road Warje Malvadi Pune
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="right"
+    fxFlex="50"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+  >
+    <div
+      class="send-message"
+      fxLayout="column"
+      fxLayoutAlign="center stretch"
+    >
+      <app-send-message-form></app-send-message-form>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <app-footer></app-footer>
+</div>

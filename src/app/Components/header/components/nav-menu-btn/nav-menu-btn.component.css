@@ -1,0 +1,16 @@
+.container {
+  cursor: pointer;
+  height: 10vh;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.container:hover {
+  border-bottom: 3px solid #4A4647;
+  background: #C1B09E;
+}
+
+.active {
+  background: #C1B09E;
+  border-bottom: 3px solid #4A4647;
+}

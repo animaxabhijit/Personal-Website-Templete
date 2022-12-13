@@ -1,0 +1,37 @@
+.contact-us-container {
+  height: 90vh;
+}
+
+.box {
+  margin-left: 100px;
+  margin-top: 100px;
+  height: 70vh;
+  font-size: 20px;
+}
+
+.right {
+  background-image: url("src/assets/images/png/contact-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+}
+
+.footer {
+  height: 10vh;
+  background: #4A4647;
+}
+
+.send-message {
+  width: 90%;
+  padding: 10px;
+}

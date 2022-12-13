@@ -1,0 +1,35 @@
+.about-page-container {
+  width: 100%;
+  height: 100vh;
+  font-size: 18px;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24pt;
+  font-weight: 700;
+  letter-spacing: 2pt;
+  margin-top: 20px;
+}
+
+.line {
+  width: 25px;
+  border: 1px solid #121315;
+  background-color: #121315;
+  margin-top: 40px;
+}
+
+.description {
+  width: 45%;
+  text-align: center;
+  margin-top: -70px;
+}
+
+.skill-set .icon {
+  height: 30px;
+  width: 30px;
+}
+
+.skill-set-heading {
+  font-weight: 500;
+}

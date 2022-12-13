@@ -1,0 +1,46 @@
+.send-message-form-container {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.mat-form-field {
+  color: #B6A794;
+}
+
+/* Border */
+:host::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #B6A794;
+}
+
+/* Border After click */
+:host ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: #B6A794;
+}
+
+/* Cursor */
+:host ::ng-deep .mat-input-element {
+  caret-color: #B6A794;
+}
+
+/* mat-label normal state style */
+:host ::ng-deep .mat-form-field-label {
+  color: #B6A794;
+}
+
+/*mat-label focused style*/
+:host ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #B6A794;
+}
+
+:host ::ng-deep .mat-input-element::placeholder {
+  color: #B6A794;
+}
+
+
+button.mat-raised-button {
+  width: 150px;
+  background-color: #B6A794;
+}
