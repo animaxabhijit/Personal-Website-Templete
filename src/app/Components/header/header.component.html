@@ -17,7 +17,7 @@
   >
     <app-nav-menu-btn
       *ngFor="let eachMenu of navMenu; let i = index;"
-      (click)="selectedBtn(i)"
+      (click)="selectedBtn(i, eachMenu.btnName)"
       [menu]="eachMenu"
       [currentIndex]="i"
       [selectedIndex]="selectedIndex"
