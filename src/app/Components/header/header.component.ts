@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   id: any;
   selectedIndex: any;
-  navMenu = [{ btnName: 'Home' }, { btnName: 'About' }, { btnName: 'Contact' }];
+  navMenu = [{btnName: 'Home'}, {btnName: 'About'}, {btnName: 'Contact'}];
 
-  constructor() {}
+  constructor() {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   public selectedBtn(_index: number, btnName: any) {
     this.selectedIndex = _index;
@@ -22,16 +24,15 @@ export class HeaderComponent implements OnInit {
     } else if (btnName === 'About') {
       this.id = 'about-page';
       this.scroll(this.id)
-    } else  if (btnName === 'Contact') {
+    } else if (btnName === 'Contact') {
       this.id = 'contact-us-page';
       this.scroll(this.id)
     }
   }
 
   scroll(id: any) {
-    console.log(`scrolling to ${id}`);
     let el = document.getElementById(id);
     // @ts-ignore: Object is possibly 'null'.
-    el.scrollIntoView({behavior:"smooth"});
+    el.scrollIntoView({behavior: "smooth"});
   }
 }

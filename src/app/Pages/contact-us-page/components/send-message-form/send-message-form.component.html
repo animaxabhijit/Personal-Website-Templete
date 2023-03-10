@@ -1,19 +1,48 @@
 <div class="send-message-form-container">
-  <form>
-    <mat-form-field class="example-full-width" appearance="outline">
+  <form
+    [formGroup]="form"
+    action="https://formsubmit.co/abhijitmalvadkar2306@gmail.com" method="POST"
+  >
+    <mat-form-field
+      class="form-field"
+      appearance="outline">
       <mat-label>Name</mat-label>
-      <input matInput>
+      <input
+        matInput
+        formControlName="name"
+        name="name"
+      >
     </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="outline">
+    <mat-form-field
+      class="form-field"
+      appearance="outline">
       <mat-label>Email</mat-label>
-      <input matInput>
+      <input
+        matInput
+        formControlName="email"
+        name="email"
+      >
     </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="outline">
+    <mat-form-field
+      class="form-field"
+      appearance="outline">
       <mat-label>Love to hear from you</mat-label>
-      <textarea rows="5" matInput placeholder="Leave Us a Comment..."></textarea>
+      <textarea
+        rows="5"
+        matInput
+        placeholder="Leave Us a Comment..."
+        formControlName="text"
+        name="text"
+      >
+      </textarea>
     </mat-form-field>
   </form>
   <div class="button">
-    <button mat-raised-button>Send Message</button>
+    <button
+      mat-raised-button
+      (click)="onSubmit()"
+    >
+      Send Message
+    </button>
   </div>
 </div>

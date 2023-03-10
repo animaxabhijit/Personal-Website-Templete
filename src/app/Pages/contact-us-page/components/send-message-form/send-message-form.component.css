@@ -1,46 +1,43 @@
 .send-message-form-container {
   width: 100%;
+  color: #B6A794;
 }
 
-.example-full-width {
+.form-field {
   width: 100%;
 }
 
-.mat-form-field {
-  color: #B6A794;
-}
-
-/* Border */
-:host::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
-  color: #B6A794;
-}
-
-/* Border After click */
-:host ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-  color: #B6A794;
-}
-
 /* Cursor */
-:host ::ng-deep .mat-input-element {
+:host ::ng-deep .mat-mdc-input-element {
   caret-color: #B6A794;
 }
 
 /* mat-label normal state style */
-:host ::ng-deep .mat-form-field-label {
+:host ::ng-deep .mat-mdc-form-field-label {
   color: #B6A794;
 }
 
 /*mat-label focused style*/
-:host ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+:host .form-field ::ng-deep .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
   color: #B6A794;
 }
 
-:host ::ng-deep .mat-input-element::placeholder {
+:host .form-field ::ng-deep .mdc-floating-label {
+  color: #B6A794;
+}
+
+:host .form-field ::ng-deep .mat-mdc-input-element::placeholder {
   color: #B6A794;
 }
 
 
-button.mat-raised-button {
+button.mat-mdc-raised-button {
   width: 150px;
   background-color: #B6A794;
+}
+
+:host .form-field ::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--invalid) .mdc-notched-outline__leading,
+:host .form-field ::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--invalid) .mdc-notched-outline__notch,
+:host .form-field ::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--invalid) .mdc-notched-outline__trailing {
+  border-color: #B6A794;
 }

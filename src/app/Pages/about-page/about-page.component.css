@@ -16,13 +16,14 @@
   width: 25px;
   border: 1px solid #121315;
   background-color: #121315;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .description {
-  width: 45%;
-  text-align: center;
-  margin-top: -70px;
+  width: 75%;
+  font-size: 18px;
+  letter-spacing: 2pt;
+  line-height: normal;
 }
 
 .skill-set .icon {
@@ -32,4 +33,14 @@
 
 .skill-set-heading {
   font-weight: 500;
+}
+
+
+.left {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(182, 167, 148, 0.65)), url("../../../assets/images/jpg/me.jpg");
+  background-size: cover;
+}
+
+
+.right {
 }

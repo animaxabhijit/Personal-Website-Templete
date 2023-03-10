@@ -3,6 +3,8 @@
   padding: 0;
   width: 100%;
   height: 100vh;
+  place-items: center;
+  overflow: hidden;
 }
 
 .hero-image {
@@ -11,66 +13,67 @@
   z-index: 0;
 }
 
-.introduction-text {
+.introduction-text-wrapper {
   position: relative;
   top: -75%;
-  left: -10%;
+  left: 2%;
   font-size: 40px;
+  height: 45px;
+  overflow: hidden;
 }
 
-@keyframes vertical {
-  0% {
-    opacity: 0;
-  }
-  4% {
-    opacity: 0;
-    -webkit-transform: rotateX(-180deg);
-    transform: rotateX(-180deg);
-  }
-  10% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  38% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  45% {
-    opacity: 0;
-    -webkit-transform: translateY(-90px);
-    transform: translateY(-90px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.verticalflip {
+.text {
+  margin-top: 10px;
+  margin-right: 8px;
   font-weight: bold;
 }
 
-.verticalflip span {
-  animation: vertical 7.5s linear infinite 0s;
-  -ms-animation: vertical 7.5s linear infinite 0s;
-  -webkit-animation: vertical 7.5s linear infinite 0s;
-  position: absolute;
-  opacity: 0;
-  color: #B6A794;
+.words {
+  overflow: hidden;
 }
 
-.verticalflip span:nth-child(2) {
-  -ms-animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+span {
+  display: block;
+  font-weight: bold;
+  height: 100%;
+  padding: 12px 12px 12px 0;
+  color: #938674;
+  text-decoration: underline;
+  animation: spin_words 6s infinite;
 }
 
-.verticalflip span:nth-child(3) {
-  -ms-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+@keyframes spin_words {
+
+  10% {
+    transform: translateY(-112%);
+  }
+
+  25% {
+    transform: translateY(-100%);
+  }
+
+  35% {
+    transform: translateY(-212%);
+  }
+
+  50% {
+    transform: translateY(-200%);
+  }
+
+  60% {
+    transform: translateY(-312%);
+  }
+
+  75% {
+    transform: translateY(-300%);
+  }
+
+  85% {
+    transform: translateY(-412%);
+  }
+
+  100% {
+    transform: translateY(-400%);
+  }
+
 }

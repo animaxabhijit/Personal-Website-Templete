@@ -17,8 +17,11 @@
 }
 
 .heading {
-  font-size: 32px;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24pt;
+  font-weight: 700;
+  letter-spacing: 2pt;
+  margin-top: 20px;
 }
 
 .icon {
